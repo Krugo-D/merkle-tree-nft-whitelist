@@ -5,13 +5,13 @@ import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import '@openzeppelin/contracts/utils/Counters.sol';
 import {MerkleProof} from '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';
 
-contract ExcitedApeYachtClub is ERC721 {
+contract LynexKeys is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
     bytes32 public merkleRoot;
 
-    constructor(bytes32 merkleRoot_) ERC721('Excited Ape Yacht Club', 'EAYC') {
+    constructor(bytes32 merkleRoot_) ERC721('Lynex Keys', 'LKEY') {
         merkleRoot = merkleRoot_;
     }
 
